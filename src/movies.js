@@ -2046,8 +2046,8 @@ function scoresAverage(moviesArray) {
 
 // Iteration 5: Ordering by year - Order by year, ascending (in growing order)
 function orderByYear(moviesArray) {
-    let moviesArray2 = [...moviesArray];
-    let newOrder = moviesArray2.sort((a, b) => {
+    let newOrder = [...moviesArray];
+    newOrder.sort((a, b) => {
         if (a.year != b.year) {
             return a.year - b.year
         } return a.title.localeCompare(b.title)
